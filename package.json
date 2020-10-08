@@ -1,0 +1,23 @@
+{
+  "name": "yunyuedu",
+  "version": "1.0.0",
+  "description": "### 一、使用HBuilderX打开该项目 我下载的是啥app版，就包含各种依赖的 要准备好微信开发者工具 并且开启服务端口 #### ![](README_files/1.jpg) 在该项目根目录下运行 ``` npm install ``` 选择在微信开发者工具中运行，就会自动打开微信开发者工具了 #### ![](README_files/2.jpg)",
+  "main": "main.js",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.1.9",
+    "copy-webpack-plugin": "^5.1.1",
+    "loadsh": "0.0.4",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://e.coding.net/carryudev/yunyuedu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

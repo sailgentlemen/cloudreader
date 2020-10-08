@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "书评",
+  "usingComponents": {
+    "rate": "/components/Rate/Rate",
+    "to-top": "/components/ToTop/ToTop"
+  }
+}

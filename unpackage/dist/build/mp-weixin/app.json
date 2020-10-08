@@ -1,0 +1,89 @@
+{
+  "pages": [
+    "pages/bookmall/bookmall",
+    "pages/bookshelf/bookshelf",
+    "pages/gift/gift",
+    "pages/read/read",
+    "pages/search/search",
+    "pages/ranking/ranking",
+    "pages/boys/boys",
+    "pages/girls/girls",
+    "pages/publish/publish",
+    "pages/comment/comment",
+    "pages/commentlist/commentlist",
+    "pages/commentDeatil/commentDeatil",
+    "pages/login/login",
+    "pages/bookstall/bookstall"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#c3c3c3",
+    "selectedColor": "#3c3c3c",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/bookmall/bookmall",
+        "iconPath": "static/icon/bookmall.png",
+        "selectedIconPath": "static/icon/bookmall-on.png",
+        "text": "小书馆"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "iconPath": "static/icon/bookshelf.png",
+        "selectedIconPath": "static/icon/bookshelf-on.png",
+        "text": "我的书桌"
+      },
+      {
+        "pagePath": "pages/gift/gift",
+        "iconPath": "static/icon/gift.png",
+        "selectedIconPath": "static/icon/gift-on.png",
+        "text": "秘密花园"
+      }
+    ],
+    "condition": {
+      "current": 1,
+      "list": [
+        {
+          "name": "书架",
+          "path": "pages/bookshelf/bookshelf",
+          "query": ""
+        },
+        {
+          "name": "书城",
+          "path": "pages/bookmall/bookmall",
+          "query": ""
+        },
+        {
+          "name": "秘密花园",
+          "path": "pages/gift/gift",
+          "query": ""
+        }
+      ]
+    }
+  },
+  "usingComponents": {
+    "reader": "/components/Readers/Readers",
+    "popup": "/components/popup/popup",
+    "setting": "/components/Setting/Setting",
+    "rate": "/components/Rate/Rate",
+    "search": "/components/Search/Search",
+    "config-bar": "/components/ConfigBar/ConfigBar",
+    "query-list": "/components/QueryList/QueryList",
+    "tab": "/components/Tab/Tab",
+    "comment": "/components/Tabs/Comment/index",
+    "star": "/components/Tabs/Star/index",
+    "no-result": "/components/NoResult/NoResult",
+    "uni-transition": "/node-modules/@dcloudio/uni-ui/lib/uni-transition/uni-transition",
+    "uni-list": "/node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list",
+    "uni-list-item": "/node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item",
+    "uni-rate": "/node-modules/@dcloudio/uni-ui/lib/uni-rate/uni-rate"
+  },
+  "sitemapLocation": "sitemap.json"
+}

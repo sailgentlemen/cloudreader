@@ -1,0 +1,134 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/bookmall/bookmall",
+			"style": {
+				"navigationBarTitleText": "小书馆",
+				"navigationBarBackgroundColor": "#58B1FF"
+			}
+		},
+		{
+			"path": "pages/bookshelf/bookshelf",
+			"style": {
+				"navigationBarTitleText": "我的书桌",
+				"navigationBarBackgroundColor": "#31C6BD"
+			}
+		},
+		{
+			"path": "pages/gift/gift",
+			"style": {
+				"navigationBarTitleText": "我的小花园",
+				"navigationBarBackgroundColor": "#FC6337"
+			}
+		},
+		{
+			// "path" : "pages/page/page",
+			"path": "pages/read/read",
+			"style": {
+				"backgroundColor": "#FFF"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarBackgroundColor": "#58B1FF"
+			}
+		}, {
+			"path": "pages/ranking/ranking",
+			"style": {
+				"navigationBarTitleText": "排行"
+			}
+		}, {
+			"path": "pages/boys/boys",
+			"style": {
+				"navigationBarTitleText": "男生"
+			}
+		}, {
+			"path": "pages/girls/girls",
+			"style": {
+				"navigationBarTitleText": "女生"
+			}
+		}, {
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationBarTitleText": "出版"
+			}
+		}, {
+			"path": "pages/comment/comment",
+			"style": {
+				"navigationBarTitleText": "写点评"
+			}
+		}, {
+			"path": "pages/commentlist/commentlist",
+			"style": {
+				"navigationBarTitleText": "书评"
+			}
+		}, {
+			"path": "pages/commentDeatil/commentDeatil",
+			"style": {}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "暮光书菇"
+			}
+		}
+	    ,{
+            "path" : "pages/bookstall/bookstall",
+            "style" : {
+				"navigationBarTitleText": "分类书摊"
+			}
+        }
+    ],
+	"globalStyle": {
+		// "navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#c3c3c3",
+		"selectedColor": "#3c3c3c",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/bookmall/bookmall",
+				"iconPath": "static/icon/bookmall.png",
+				"selectedIconPath": "static/icon/bookmall-on.png",
+				"text": "小书馆"
+			},
+			{
+				"pagePath": "pages/bookshelf/bookshelf",
+				"iconPath": "static/icon/bookshelf.png",
+				"selectedIconPath": "static/icon/bookshelf-on.png",
+				"text": "我的书桌"
+			}, 
+			{
+				"pagePath": "pages/gift/gift",
+				"iconPath": "static/icon/gift.png",
+				"selectedIconPath": "static/icon/gift-on.png",
+				"text": "秘密花园"
+			}
+		],
+		"condition": { //模式配置，仅开发期间生效
+			"current": 1, //当前激活的模式（list 的索引项）
+			"list": [{
+					"name": "书架", //模式名称
+					"path": "pages/bookshelf/bookshelf", //启动页面，必选
+					"query": "" //启动参数，在页面的onLoad函数里面得到。uid=100&t=1535987051
+				},
+				{
+					"name": "书城", //模式名称
+					"path": "pages/bookmall/bookmall", //启动页面，必选
+					"query": "" //启动参数，在页面的onLoad函数里面得到。
+				},
+				{
+					"name": "秘密花园", //模式名称
+					"path": "pages/gift/gift", //启动页面，必选
+					"query": "" //启动参数，在页面的onLoad函数里面得到。
+				}
+			]
+		}
+	}
+}

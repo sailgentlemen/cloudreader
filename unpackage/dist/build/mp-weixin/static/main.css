@@ -1,0 +1,338 @@
+/* 暗黑模式 */
+
+ page {
+ 	--yyd-color-primary: #FC6337;
+ 	--yyd-color-title: #1d242c;
+ 	--yyd-color-commend: #03060b;
+ 	--yyd-bgcolor-content: #8f7fc;
+ 	--yyd-bgcolor-page: #fff;
+ 	--yyd-bgcolor-settings: #fff;
+ 	--yyd-color-fonticon: #1d242c;
+ 	--yyd-bgcolor-panel: #fff;
+ 	--yyd-bgcolor-configbar: #fff;
+ 	--yyd-theme-bgcolor: #f1f1f1;
+ 	--yyd-read-bgcolor: #f8f7fc;
+ 	--yyd-dark-next-bgcolor: #FC6337;
+ 	--yyd-bgcolor-page: #f5f5f5;
+ 	--yyd-dark-color-title: #1d242c;
+ 	--yyd-dark-color-abstract: #7d8184;
+ 	--yyd-dark-color-nums: #7c8187;
+ 	--yyd-dark-bgcolor-commend: #f2f6f9;
+ 	--yyd-dark-color-commend: #03060b;
+ 	--yyd-bgcolor-configbar: #fff;
+ 	--yyd-color-settings-border: #e1e1e1;
+ 	--yyd-border-configbar-color: #e0e0e0;
+ 	--yyd-popup-color-header: #91949b;
+ 	--yyd-popup-color-title: #141b25;
+ 	--yyd-mask-bgcolor: rgba(0, 0, 0, .3);
+ 	--yyd-bookrack-bgcolor: #f7f7f7;
+ 	--yyd-bookrack-color: #676b6e;
+ }
+
+ page .dark {
+ 	background: var(--yyd-bgcolor-page);
+ 	--yyd-popup-list-color: #e4e4e4;
+ 	--yyd-mask-bgcolor: transparent;
+ 	--yyd-popup-color-title: #eeeeee;
+ 	--yyd-popup-color-header: #f6f6f6;
+ 	--yyd-color-settings-color: #b5b9bc;
+ 	--yyd-border-configbar-color: transparent;
+ 	--yyd-color-settings-border: transparent;
+ 	--yyd-bgcolor-configbar: #0f141a;
+ 	--yyd-bgcolor-fullpage: #000;
+ 	--yyd-bgcolor-page: #000;
+ 	--yyd-dark-color-title: #f8f8f8;
+ 	--yyd-dark-color-abstract: #9a9a9a;
+ 	--yyd-dark-color-nums: #a8a8a8;
+ 	--yyd-dark-color-primary: #7c7c7c;
+ 	--yyd-dark-bgcolor-start: #2e3136;
+ 	--yyd-dark-start-surface: #9da1a4;
+ 	--yyd-dark-bgcolor-commend: #26252a;
+ 	--yyd-dark-color-commend: #fff;
+ 	--yyd-dark-commend-start-color: #46454a;
+ 	--yyd-dark-commend-start-surface: #8d8c91;
+ 	--yyd-dark-color: #b0b0b0;
+ 	--yyd-dark-bgcolor-content: #000;
+ 	--yyd-dark-next-bgcolor: #b0b0b0;
+ 	--yyd-popup-bgcolor: #1c1c1c;
+ 	--yyd-popup-color: #f0f0f0;
+ 	--yyd-popup-bgcolor-mask: transparent;
+ 	--yyd-configBar-bgcolor: #0f141a;
+ 	--yyd-read-bgcolor: #000;
+ 	--yyd-read-color: #bcbcbc;
+ 	--yyd-bookrack-bgcolor: #282b32;
+ 	--yyd-bookrack-color: #a6a6a6;
+ }
+
+ /* 暗黑模式end */
+
+ /* ==================
+        初始化
+ ==================== */
+ page {
+ 	font-size: 28rpx;
+ 	color: #333333;
+ 	font-family: Helvetica Neue, Helvetica, sans-serif;
+ }
+
+ view,
+ scroll-view,
+ swiper,
+ button,
+ input,
+ textarea,
+ label,
+ navigator,
+ image {
+ 	box-sizing: border-box;
+ }
+
+ .round {
+ 	border-radius: 5000upx;
+ }
+
+ .radius {
+ 	border-radius: 6upx;
+ }
+
+ /* ==================
+          图片
+ ==================== */
+
+ image {
+ 	max-width: 100%;
+ 	display: inline-block;
+ 	position: relative;
+ 	z-index: 0;
+ }
+
+ image.loading::before {
+ 	content: "";
+ 	background-color: #f5f5f5;
+ 	display: block;
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	z-index: -2;
+ }
+
+ image.loading::after {
+ 	content: "\e7f1";
+ 	font-family: "cuIcon";
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 32upx;
+ 	height: 32upx;
+ 	line-height: 32upx;
+ 	right: 0;
+ 	bottom: 0;
+ 	z-index: -1;
+ 	font-size: 32upx;
+ 	margin: auto;
+ 	color: #ccc;
+ 	-webkit-animation: cuIcon-spin 2s infinite linear;
+ 	animation: cuIcon-spin 2s infinite linear;
+ 	display: block;
+ }
+
+ .response {
+ 	width: 100%;
+ }
+
+ /* ==================
+         开关
+ ==================== */
+
+ switch,
+ checkbox,
+ radio {
+ 	position: relative;
+ }
+
+ switch::after,
+ switch::before {
+ 	font-family: "cuIcon";
+ 	content: "\e645";
+ 	position: absolute;
+ 	color: #ffffff !important;
+ 	top: 0%;
+ 	left: 0upx;
+ 	font-size: 26upx;
+ 	line-height: 26px;
+ 	width: 50%;
+ 	text-align: center;
+ 	pointer-events: none;
+ 	transform: scale(0, 0);
+ 	transition: all 0.3s ease-in-out 0s;
+ 	z-index: 9;
+ 	bottom: 0;
+ 	height: 26px;
+ 	margin: auto;
+ }
+
+ switch::before {
+ 	content: "\e646";
+ 	right: 0;
+ 	transform: scale(1, 1);
+ 	left: auto;
+ }
+
+ switch[checked]::after,
+ switch.checked::after {
+ 	transform: scale(1, 1);
+ }
+
+ switch[checked]::before,
+ switch.checked::before {
+ 	transform: scale(0, 0);
+ }
+
+ /* #ifndef MP-ALIPAY */
+ radio::before,
+ checkbox::before {
+ 	font-family: "cuIcon";
+ 	content: "\e645";
+ 	position: absolute;
+ 	color: #ffffff !important;
+ 	top: 50%;
+ 	margin-top: -8px;
+ 	right: 5px;
+ 	font-size: 32upx;
+ 	line-height: 16px;
+ 	pointer-events: none;
+ 	transform: scale(1, 1);
+ 	transition: all 0.3s ease-in-out 0s;
+ 	z-index: 9;
+ }
+
+ radio .wx-radio-input,
+ checkbox .wx-checkbox-input,
+ radio .uni-radio-input,
+ checkbox .uni-checkbox-input {
+ 	margin: 0;
+ 	width: 24px;
+ 	height: 24px;
+ }
+
+ checkbox.round .wx-checkbox-input,
+ checkbox.round .uni-checkbox-input {
+ 	border-radius: 100upx;
+ }
+
+ /* #endif */
+
+ switch[checked]::before {
+ 	transform: scale(0, 0);
+ }
+
+ /* 模块公共样式 */
+ .section {
+ 	background: #fff;
+ 	border-radius: 15rpx;
+ 	margin-top: 20rpx;
+ 	box-shadow: 0 0 30rpx 2rpx rgba(0, 0, 0, .1);
+ 	padding: 30rpx 36rpx;
+ }
+
+ /* 模块标题 */
+ .section-header {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	padding: 30rpx 36rpx;
+ 	margin-top: 40rpx;
+ }
+
+ /* 2行展示 */
+ .line2 {
+ 	text-overflow: -o-ellipsis-lastline;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 2;
+ 	line-clamp: 2;
+ 	-webkit-box-orient: vertical;
+ }
+
+ .line3 {
+ 	text-overflow: -o-ellipsis-lastline;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 3;
+ 	line-clamp: 3;
+ 	-webkit-box-orient: vertical;
+ }
+
+ .line5 {
+ 	text-overflow: -o-ellipsis-lastline;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 5;
+ 	line-clamp: 5;
+ 	-webkit-box-orient: vertical;
+ }
+
+ .enable__scroll {
+ 	overflow-y: hidden;
+ 	height: 100vh;
+ }
+ 
+ .font-emphasis-0 {
+ 	font-size: 38rpx;
+ 	line-height: 1.5
+ }
+
+ .font-emphasis-20 {
+ 	font-size: 42rpx;
+ 	line-height: 1.6
+ }
+
+ .font-emphasis-40 {
+ 	font-size: 46rpx;
+ 	line-height: 1.7
+ }
+
+ .font-emphasis-60 {
+ 	font-size: 50rpx;
+ 	line-height: 1.8
+ }
+
+ .font-emphasis-80 {
+ 	font-size: 54rpx;
+ 	line-height: 1.9
+ }
+
+ .font-emphasis-100 {
+ 	font-size: 62rpx;
+ 	line-height: 2.0
+ }
+
+/* Tab组件 */
+ .weui-tabs-bar__wrp {
+ 	border-bottom: 1px solid #eee;
+ 	margin-top: 10px;
+ }
+
+ .weui-tabs-swiper {
+ 	width: 100%;
+ }
+
+ .tab-content {
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	box-sizing: border-box;
+ 	padding: 40rpx;
+ }
+
+ .weui-tabs-bar__title {
+ 	margin: 0px 10px;
+ }
+
+ .tab-bar-title__selected {
+ 	font-size: 20px;
+ 	font-weight: bold;
+ }

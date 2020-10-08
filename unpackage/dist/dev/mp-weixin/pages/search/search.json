@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#58B1FF",
+  "usingComponents": {
+    "search": "/components/Search/Search",
+    "query-list": "/components/QueryList/QueryList",
+    "no-result": "/components/NoResult/NoResult",
+    "to-top": "/components/ToTop/ToTop"
+  }
+}

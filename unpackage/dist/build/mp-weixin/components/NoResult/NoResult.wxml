@@ -1,0 +1,1 @@
+<view class="no__result data-v-e22c5094"><view class="pic data-v-e22c5094"><image src="/static/images/no-result.jpg" mode="widthFix" class="data-v-e22c5094"></image></view><view class="msg data-v-e22c5094">{{msg}}</view></view>

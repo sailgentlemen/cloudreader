@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "出版",
+  "usingComponents": {
+    "query-list": "/components/QueryList/QueryList",
+    "no-result": "/components/NoResult/NoResult",
+    "to-top": "/components/ToTop/ToTop"
+  }
+}

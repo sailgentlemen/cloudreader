@@ -1,0 +1,70 @@
+/* tabbar icon */
+@font-face {
+	font-family: 'iconfont';
+	/* project id 1751527 */
+	src: url('https://at.alicdn.com/t/font_1751527_z4tkl3p3d19.eot');
+	src: url('https://at.alicdn.com/t/font_1751527_z4tkl3p3d19.eot?#iefix') format('embedded-opentype'),
+		url('https://at.alicdn.com/t/font_1751527_z4tkl3p3d19.woff2') format('woff2'),
+		url('https://at.alicdn.com/t/font_1751527_z4tkl3p3d19.woff') format('woff'),
+		url('https://at.alicdn.com/t/font_1751527_z4tkl3p3d19.ttf') format('truetype'),
+		url('https://at.alicdn.com/t/font_1751527_z4tkl3p3d19.svg#iconfont') format('svg');
+}
+
+/* menu icon */
+@font-face {
+	font-family: 'iconfont';
+	src: url('./static/font/iconfont.eot');
+	src: url('./static/font/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('./static/font/iconfont.woff2') format('woff2'),
+		url('./static/font/iconfont.woff') format('woff'),
+		url('./static/font/iconfont.ttf') format('truetype'),
+		url('./static/font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 75rpx;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconbookmall1:before {
+	content: "\e604";
+}
+
+.iconbookshelf1:before {
+	content: "\e611";
+}
+
+.iconmy:before {
+	content: "\e61c";
+}
+
+.iconmy-on-copy:before {
+	content: "\e660";
+}
+
+.iconbookshelf1-on-copy:before {
+	content: "\e661";
+}
+
+.iconbookmall1-on:before {
+	content: "\e65f";
+}
+
+.iconbookmall-on:before {
+	content: "\e65d";
+}
+
+.iconbookmall:before {
+	content: "\e60a";
+}
+
+.iconbookshelf:before {
+	content: "\e60b";
+}
+
+.iconbookshelf-on:before {
+	content: "\e65e";
+}

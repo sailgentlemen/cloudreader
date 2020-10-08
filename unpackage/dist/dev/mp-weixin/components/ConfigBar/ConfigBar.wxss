@@ -1,0 +1,50 @@
+
+.darkSettings.data-v-0b71982d {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	margin-top: 30rpx;
+}
+.darkSettings view.data-v-0b71982d {
+	border: 1rpx solid #eaeaea;
+	font-size: 40rpx;
+	padding: 10rpx 118rpx;
+	border-radius: 8rpx;
+}
+.darkSettings .sunshine.data-v-0b71982d:before {
+	content: "\1F31E";
+}
+.darkSettings .moonshine.data-v-0b71982d:before {
+	content: "\1F31C";
+}
+.settings.data-v-0b71982d {
+	background: var(--yyd-bgcolor-configbar);
+	padding: 60rpx 0;
+	border-top: 1px solid var(--yyd-border-configbar-color);
+}
+.fontSettings.data-v-0b71982d {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 0 40rpx;
+}
+.steps__wrap.data-v-0b71982d {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+

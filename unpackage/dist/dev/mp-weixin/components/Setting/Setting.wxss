@@ -1,0 +1,107 @@
+
+.current.data-v-7839452a {
+	color: var(--yyd-color-primary);
+}
+.setting__bar.data-v-7839452a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background: var(--yyd-bgcolor-configbar);
+	border-top: 1px solid var(--yyd-color-settings-border);
+	-webkit-box-pack: space-evenly;
+	-webkit-justify-content: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 36rpx 0 27rpx 0;
+	font-size: 24rpx;
+	position: relative;
+}
+
+/* 入场动画 */
+.animation__slide_in.data-v-7839452a {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0); /* 移入视图 */
+	opacity: 1;
+}
+
+/* 离场动画 */
+.animation__slide_out.data-v-7839452a {
+	-webkit-transform: translateY(100%);
+	        transform: translateY(100%);
+	opacity: 0;
+}
+
+/* .setting__bar .catalog,.setting__bar .setting {
+	position: relative;
+	z-index: 999;
+} */
+.catalog .scroll-view-item.data-v-7839452a {
+	height: 132rpx;
+	border-top: 1px solid #dbdbdb;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.setting__bar .item .font.data-v-7839452a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	/* justify-content: space-between; */
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.setting__bar .iconfont.data-v-7839452a {
+	font-size: 40rpx;
+}
+.setting__bar .join__bookrack.data-v-7839452a {
+	position: relative;
+}
+.setting__bar .join__bookrack .getUserInfo.data-v-7839452a {
+	position: absolute;
+	width: 110%;
+	height: 110%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.setting__bar .join__bookrack .getUserInfo button.data-v-7839452a {
+	height: 100%;
+}
+.setting__bar .join__bookrack .font.data-v-7839452a {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	background: #FC6337;
+	color: #fff;
+	border-radius: 60rpx;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-flex: 0;
+	-webkit-flex-grow: 0;
+	        flex-grow: 0;
+	line-height: 77rpx;
+	padding: 0 20rpx;
+}
+.setting__bar .existing .font.data-v-7839452a {
+	background: var(--yyd-bookrack-bgcolor);
+	color: var(--yyd-bookrack-color);
+}
+.setting__bar .join__bookrack .iconfont.data-v-7839452a {
+	margin-right: 5rpx;
+}
+.item.data-v-7839452a {
+	color: var(--yyd-color-settings-color);
+}
+

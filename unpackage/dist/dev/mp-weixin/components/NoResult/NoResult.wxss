@@ -1,0 +1,23 @@
+
+.no__result.data-v-998ad0ee {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	color: #b8b8b8;
+	margin-top: 500rpx;
+}
+.no__result .pic.data-v-998ad0ee {
+	width: 350rpx;
+	margin-bottom: 20rpx;
+}
+

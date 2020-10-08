@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['goTopHandle',['$event']]]]]}}" class="to__top data-v-955df382" bindtap="__e"><view class="iconfont data-v-955df382"></view><view class="tips data-v-955df382">回到顶部</view></view>

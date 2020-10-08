@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "小书馆",
+  "navigationBarBackgroundColor": "#58B1FF",
+  "usingComponents": {
+    "search": "/components/Search/Search",
+    "to-top": "/components/ToTop/ToTop"
+  }
+}

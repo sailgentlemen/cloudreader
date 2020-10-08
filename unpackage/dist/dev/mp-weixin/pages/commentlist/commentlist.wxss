@@ -1,0 +1,43 @@
+
+.page__wrap.data-v-35a0f8dd {
+	background: #ebefee;
+}
+.comment__item.data-v-35a0f8dd {
+	margin-bottom: 20rpx;
+	background: #fff;
+	padding: 0 38rpx 45rpx;
+}
+.header.data-v-35a0f8dd {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-bottom: 20rpx;
+	padding-top: 40rpx;
+}
+.avatar.data-v-35a0f8dd {
+	width: 58rpx;
+	height: 58rpx;
+	margin-right: 20rpx;
+}
+.avatar image.data-v-35a0f8dd {
+	border-radius: 100%;
+}
+.remark.data-v-35a0f8dd {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	color: #8c9093;
+	margin-left: 15rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.content.data-v-35a0f8dd {
+	line-height: 1.5;
+	fonts-size: 42rpx;
+	padding-left: 84rpx;
+}
+

@@ -1,0 +1,6 @@
+{
+  "backgroundColor": "#FFF",
+  "usingComponents": {
+    "setting": "/components/Setting/Setting"
+  }
+}
